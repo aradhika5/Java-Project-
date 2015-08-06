@@ -1,0 +1,357 @@
+import java.io.*;
+import java.util.*;
+class java_projects
+{
+public static void main(String args[])throws IOException
+{
+
+
+ boolean ch;
+ String pw;
+double  amt;
+
+
+BufferedReader dis=new BufferedReader(new InputStreamReader(System.in));
+System.out.println("\t\t00000   00000 000    000    000    000 000   000 00000000 00000000 000        000000000");
+System.out.println("\t\t00000   00000 000    000    000    000 000   000 00000000 00000000 000        000000000");
+System.out.println("\t\t000  000  000    000        000    000 000000000 0000     000      000        0000     ");
+System.out.println("\t\t000       000    000        000 00 000 000   000 00000000 00000000 0000000000     00000");
+System.out.println("\t\t000       000    000        000    000 000   000 00000000 00000000 0000000000 000000000");
+int lc=0;
+boolean flag=false;
+do
+{
+System.out.println("Enter your password");
+pw=dis.readLine();
+ch=pw.equals("aradhika");
+if(ch==true)
+flag=true;
+else
+{
+System.out.println("Invalid Password! try again");
+lc++;
+}}while(lc!=3 && flag==false);
+if (flag==false)
+{
+System.out.println("Login Attempts over, sorry you are not an authorised user");
+System.exit(0);
+}
+else
+{
+System.out.println("$$$    $$$  %%%%%%%%%%%%  ***         @@@@@@@@@@  ^^^^^^^^^^^^   ######     ######  !!!!!!!!!!!!!  ");
+System.out.println("$$$    $$$  %%%%%%%%%%%%  ***         @@@@@@@@@@  ^^^^^^^^^^^^   ######     ######  !!!!!!!!!!!!!  ");
+System.out.println("$$$    $$$  %%%%%%%       ***         @@          ^^^      ^^^   ###   ####    ###  !!!!!!!        ");
+System.out.println("$$$    $$$  %%%%%%%       ***         @@          ^^^      ^^^   ###           ###  !!!!!!!        ");
+System.out.println("$$$ $$ $$$  %%%%%%%%%%%%  **********  @@@@@@@@@@  ^^^^^^^^^^^^   ###           ###  !!!!!!!!!!!!!  ");
+System.out.println("$$$    $$$  %%%%%%%%%%%%  **********  @@@@@@@@@@  ^^^^^^^^^^^^   ###           ###  !!!!!!!!!!!!!  ");
+System.out.println("please wait for the software to load");
+for(int i=1;i<100000;i+=20)
+{
+System.out.print("*");
+}
+
+System.out.println("\n loading completed.press any key to continue");
+BufferedReader n=new BufferedReader(new InputStreamReader(System.in));
+String s=n.readLine();
+mainmenu();
+}
+//else
+//{
+//System.out.println("Sorry but the password you have entered does not match with the correct password");
+//System.out.println(" P.S.>These passwords are case sensitive.Please check your CAPS lock key.");
+//System.out.println("THANK YOU....");
+//System.exit(0);
+//}
+}
+public static void mainmenu()throws IOException
+{
+int main;
+char op,ch;
+do
+{
+
+BufferedReader in=new BufferedReader(new InputStreamReader(System.in));
+System.out.println("welcome user to our showroom");
+System.out.println("$$$$$$-------- Main Menu --------$$$$$$$");
+System.out.println("\t $$1.>Purchase a Car ");
+System.out.println("\t $$2.>Know about the showroom ");
+System.out.println("\t $$3.>Models available in the market ");
+System.out.println("\t $$4.>Our motto ");
+System.out.println("\t $$5.>Contact us ");
+System.out.println("\t $$6.>Add a Car ");
+System.out.println("\t $$7.>Exit ");
+System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+main=Integer.parseInt(in.readLine());
+
+switch(main)
+{
+case 1:
+int n;
+
+
+System.out.println("loading ..........................please wait............................................................................");
+System.out.println("select your money range...........");
+System.out.println("1.1 lakh - 3 lakhs");
+System.out.println("2.3 lakh - 5 lakhs");
+System.out.println("3.5 lakh - 10 lakhs");
+System.out.println("4.10 lakhs and above");
+n=Integer.parseInt(in.readLine());
+switch(n)
+{
+case 1:
+System.out.println("1.>Maruti Alto LXI");
+System.out.println("2.>Maruti Alto VXI");
+System.out.println("3.>Maruti Alto LX");
+System.out.println("4.>Maruti 800");
+System.out.println("5.>Maruti Omni");
+long amt=300000;
+System.out.println("each car in this category will cost you rupees"+amt);
+System.out.println("enetr the number of cars you wish to buy");
+long num=Long.parseLong(in.readLine());
+amt=num*300000;
+break;
+
+case 2:
+System.out.println("1.>Zen Estilo");
+System.out.println("2.>Maruti A-Star");
+System.out.println("3.>Maruti Ritz");
+System.out.println("4.>Maruti WagonaR");
+System.out.println("5.>Maruti Versa");
+amt=300000;
+System.out.println("each car in this category will cost you rupees"+amt);
+System.out.println("enter the number of cars you wish to buy");
+num=Integer.parseInt(in.readLine());
+amt=num*300000;
+break;
+
+case 3:
+System.out.println("1.>Maruti Swift");
+System.out.println("2.>Maruti DZire");
+System.out.println("3.>Maruti Gypsy");
+System.out.println("4.>Maruti SX4");
+System.out.println("5.>Maruti Esteem");
+amt=300000;
+System.out.println("each car in this category will caot you rupees"+amt);
+System.out.println("enetr the number of cars you wish to buy");
+num=Integer.parseInt(in.readLine());
+amt=num*300000;
+break;
+
+case 4:
+System.out.println("1.>Maruti Grand Vitara");
+amt=300000;
+System.out.println("each car in this category will caot you rupees"+amt);
+System.out.println("enetr the number of cars you wish to buy");
+num=Integer.parseInt(in.readLine());
+amt=num*300000;
+break;
+
+}
+
+System.out.println("do you want to conyinue?if yes press y");
+ch=(char)in.read();
+while((ch=='Y')||(ch=='y'));
+
+case 2:
+System.out.println("Welcome to the showroom....MY WHEELS..!where my family moves happily on My Wheels ");
+System.out.println("# FULL RANGE OF CARS--");
+System.out.println("We offer 13 brands and over 150 varients ranging from people's car \n Maruti 800to sylish hatchback Ritz, A-Star, Swift, DZire, SX4 and luxury suv Grand Vitara");
+System.out.println("---------------------------------------------------------------------------------------------------------------------------------------------------------------");
+System.out.println("# 25 YEARS OF TRUST--");
+System.out.println("Maruti has always spell trust - be it with the products themselves or with the service standards. \n We have built trust by aligning ourselves with the needs of customers .\n See how we have done that over 25 years");
+System.out.println("----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+System.out.println("# CUSTOMER DELIGHT--");
+System.out.println("Creating Customer Delight is not a recent discovery for the company rather the expression finds roots in the company vision .\n Taking forward the same spirit the company is committed to serve many more customers through a numerous way..in times to come....");
+System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+System.out.println("# KNOWING MARUTI SUZUKI");
+System.out.println("Maruti Suzuki India Limited (MSIL,formerly Maruti Udyog Limited),a subsidiary of Suzuki Motor Corporation of Japan \n is India's largest passenger car company ,accounting for over 50 percent of domestic car market");
+System.out.println("---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+System.out.println("# SERVICING EVERY CORNER");
+System.out.println("We have service footprint in over 1200 towns across the country");
+System.out.println("---------------------------------------------------------------");
+System.out.println("# KEEPING OUR ROADS SAFE");
+System.out.println("With 51 Driving Schools across the country and using advanced training methods like stimulators Maruti Driving Schools \n tackle  road safety at the grassroots");
+System.out.println("---------------------------------------------------------------------------------------------------------------------------------------------------------------");
+System.out.println("# CURRENT OPENEINGS");
+System.out.println("Maruti Suzuki offers one of the best environments to learn and grow and to be associated with some of the best processes \n and methods. To be a part of maruti Suzuki visit the site http://www.marutisuzuki.com/career.aspx ");
+System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+System.out.println("# CODE OF CONDUCT");
+System.out.println("As a responsible corporate citizen, Maruti Suzuki India Limited ('maruti') has always believed in following highest standards of Corporate Governanace");
+System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------");
+System.out.println("THANK YOU FOR YOUR KIND VISIT ");
+System.out.println("Keep moving happily on My Wheels....");
+
+break;
+
+case 3:
+char opt;int k;
+
+do
+{
+System.out.println("select your choice to know more about the car");
+System.out.println("1.>Maruti Alto ");
+System.out.println("2.>Maruti 800");
+System.out.println("3.>Maruti Omni");
+System.out.println("4.>Zen Estilo");
+System.out.println("5.>Maruti A-Star");
+System.out.println("6.>Maruti Ritz");
+System.out.println("7.>Maruti WagonaR");
+System.out.println("8.>Maruti Versa");
+System.out.println("9.>Maruti Swift");
+System.out.println("10.>Maruti DZire");
+System.out.println("11.>Maruti Gypsy");
+System.out.println("12.>Maruti SX4");
+System.out.println("13.>Maruti Esteem");
+System.out.println("14.>Maruti Grand Vitara");
+BufferedReader dis=new BufferedReader(new InputStreamReader(System.in));
+k=Integer.parseInt(dis.readLine());
+
+switch(k)
+{
+case 1:System.out.println("The Alto is a great combination of economy ,practicality and styling .\n It is testified by the 24-hour endurance record on august 2003 of covering 3082 kms in 24-hours at an average speed of 128 kmph");
+       System.out.println("________________________________________________________________________________________________________________________________________________________________________________________________________");
+break;
+case 2:System.out.println("The Maruti 800 has gone beyond being just a car;it has actually changed the lifestyles of countiness people");
+       System.out.println("___________________________________________________________________________________________________________");
+break;
+case 3:System.out.println("The Omni is truly India's original Multipurpose Vehicle. \n Today it is available in 5 avataars -5 seater,8 seater,cargo,ambulance and LPG");
+       System.out.println("__________________________________________________________________________________________________________________________________________");
+break;
+case 4:System.out.println("A spanish expression for 'style',the new Zen Estilo stands true to its name .\n Its aerodynamic body ,unique bean shape,sparkling colours and snazzy lights will rev up your style quotient.An amazing blend of style and substance ,its agile nature  will leave you enthralled.");
+       System.out.println("_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________");
+break;
+case 5:System.out.println("Powered by the latest state-of-the-art,light weight 998 cc K10B petrol engine .\n A-Star is the best in class fuel-efficient car with a mileage of 19.59 kms per litre, as tested by ARAI,Pune,country's premier automotive research agency.");
+       System.out.println("____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________");
+break;
+case 6:System.out.println("It combines the modern European design,the sportiness of the swift,the latest in engine technologyand suzuki's globally acclaimed  expertise in compact cars.");
+       System.out.println("_____________________________________________________________________________________________________________________________________________________________");
+break;
+case 7:System.out.println("The world class safety features of the wagonaR keep you safe and secure,always.\n Wearing new vibrant colours ,the new wagonaR is full of freshness and energy to keep you charged up and always ready to go");
+      System.out.println("_____________________________________________________________________________________________________________________________________________________________________________________________________________");   
+break;
+case 8:System.out.println("Experience the joy of travelling together in a Versa.\n Equipped with twin ACs,large sliding doors and flexible seating ,the Versa encourages families and friends to enjoy long drives and getaways together.");
+       System.out.println("______________________________________________________________________________________________________________________________________________________________________________________________________________");
+break;
+case 9:System.out.println("The time has come for a new kind of compact car,one that's based in a fresh approach to design and development ,\n delivers the kind of driver and passenger experience that places it in a class of its own and has true worldwide appeal");
+       System.out.println("__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________");
+break;
+case 10:System.out.println("Presenting a car that has everything you have desired .Striking looks ,luxurious interiors ,all the features you've always desired enough power to capture your heart.\n Just slide in the DZireand take it for a spin ");
+        System.out.println("_______________________________________________________________________________________________________________________________________________________________________________________________________________________");
+break;
+case 11:System.out.println("The maruti Gypsyis a four wheel SUV based on the Suzuki SJ long wheel base. In contrast to the suzuki ,the Maruti is available in a pickup version as well as a 4-door version.\n The maruti Gypsy is available as 'soft top','hard top' and as 'ambulance car'.");
+        System.out.println("________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________");
+break;
+case 12:System.out.println("Revolutionary European design ,world class 'Drive by wire' technology,most spacious in its class ,Steering mounted audio controls ,maximum ground clearance in its class,high \n on safety with dual front airbags,ABS and EBD features");
+        System.out.println("_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________");
+break;
+case 13:System.out.println("Sophisticated big structured Maruti Suzuki esteem is one of the old car of the maruti Udyog group.To run this huge car its engine is made of lightweight all-aluminium.\n This contemporary engine has capacity of 65 bhp at 6000 rpm.");
+        System.out.println("______________________________________________________________________________________________________________________________________________________________________________________________________________________________________");
+break;
+case 14:System.out.println("Distinctively styled ,the third generation Grand Vitara takes three decades of Suzuki SUV heritage to the next level.The vitara came armed with a stylish design ,superior engineering and a new name ,the grand Vitara");
+        System.out.println("_______________________________________________________________________________________________________________________________________________________________________________________________________________________");
+break;
+default:System.out.println("Invalid choice");
+}
+System.out.println("do you want to continue? \n press 'y' for yes and 'n' for no");
+opt=(char)dis.read();
+
+}while((opt=='Y')||(opt=='y'));
+
+break;
+
+case 4:
+System.out.println("WE CARE.....");
+System.out.println("True to the tradition of Maruti group, it  is committed in letter and \n spirit to Corporate Social Responsibility. It is a signatory to the United Nations Global Compact,\n  and is engaged in community and social initiatives on labour and environment standards in compliance with the principles of the Global Compact.\n  In accordance with this, it plays an active role in community development, serving rural communities adjacent to its manufacturing locations.\n Maruti Suzuki Limited believes in technology for tomorrow. \n Our products stand testimony to this.Our annual expenditure on R&D is approximately 2% of our turnover. We have also set up two in-house Engineering Research Centres that house \n India's only Certified Crash Test Facility. We ensure that our products are environmentally sound in a variety of ways");
+break;
+
+case 5:
+System.out.println("\t\t\t################################");
+System.out.println("\t\t\t######## Cotact Details ########");
+System.out.println("\t\t\tCOMPANY NAME: My Wheels Pvt. Ltd.");
+System.out.println("\t\t\tWEBSITE: mywheels.0rg");
+System.out.println("\t\t\tEXECUTIVE NAME: Ms. Aradhika Acharya");
+System.out.println("\t\t\tADDRESS: My Wheels Pvt. Ltd. Hoshangabad Road Near SBI LHO Arera Hills \n \t\t\tBhopal-Madhya Pradesh,INDIA 462001");
+System.out.println("\t\t\tE-MAIL ADDRESS: aradhika.acharya@gmail.com");
+System.out.println("\t\t\tTELEPHONE: 94-280-32420, 9926001540");
+break;
+
+
+case 6:add_product();
+break;
+case 7:
+System.out.println(" \t ©  All material in this course is, unless otherwise stated, the property of Aradhika Acharya. \nCopyright and other intellectual property laws protect these materials. Reproduction or retransmission of the materials, in whole or in part, in any manner,\n  without the prior written consent of the copyright holder, is a violation of copyright law.");
+System.out.println("===============================================================================================================================================================================================================================================================================================================================================================");
+System.out.println("Thank you for visiting this portal");
+System.exit(0);
+
+break;
+}
+System.out.println("do you want to continue again?");
+op=(char)in.read();
+}while((op=='Y')||(op=='y'));
+}
+
+
+
+
+public static void add_product()throws IOException
+{
+String car_name;
+String car_code;
+int qoh=0;
+double rate;
+String rep;
+do
+{
+BufferedReader isr=new BufferedReader(new InputStreamReader(System.in));
+System.out.println("\t\t########   Add A Product    #########");
+System.out.println("\t\t##### 1.>Enter car_code         #####");
+System.out.println("\t\t##### 2.>Enter car_name         #####");
+System.out.println("\t\t##### 3.>Enter Quantity on hand #####");
+System.out.println("\t\t##### 4.>Enter Rate             #####");
+System.out.println("\t\t 1.>");car_code=isr.readLine();
+System.out.println("\t\t 2.>");car_name=isr.readLine();
+
+ 
+
+System.out.println("\t\t 4.>");rate=Double.parseDouble(isr.readLine());
+System.out.println(" are you sure you want to add the record to the file?(y/n)");
+char c=(char)isr.read();
+if((c=='Y')||(c=='y'))
+{
+FileWriter f=new FileWriter("car.txt",true);
+BufferedWriter b=new BufferedWriter (f);
+PrintWriter p=new PrintWriter(b);
+p.print(car_code +"\t");
+p.print(car_name+"\t");
+p.print(qoh+"\t");
+p.println(rate);
+p.close();
+b.close();
+f.close();
+}
+else
+System.out.println("Record not added to the file ");
+System.out.println("Do you want to add more cars in the stock?");
+BufferedReader read=new BufferedReader(new InputStreamReader(System.in));
+rep=read.readLine();
+}while(rep.equalsIgnoreCase("Y"));
+}
+
+public void reader()throws IOException
+{
+FileReader f=new FileReader("customers.txt");
+BufferedReader b=new BufferedReader(f);
+String text;
+while((text=b.readLine())!=null)
+{
+System.out.println(text);
+}
+}
+}
+
+ 
+
+ 
+
+   
